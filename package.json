@@ -1,0 +1,43 @@
+{
+  "name": "here-project",
+  "version": "0.0.0-3",
+  "description": "Locational cms.",
+  "main": "private/src/app.js",
+  "scripts": {
+    "lint": "jshint . && jscs .",
+    "modules": "dependency-check ./package.json --entry private/test/index.js",
+    "extra-modules": "dependency-check ./package.json --unused --entry private/test/index.js",
+    "test": "lab -v -c -l -m 5000 private/test/",
+    "start": "node private/src/app.js"
+  },
+  "author": "Vladimir Bukhin",
+  "license": "ISC",
+  "dependencies": {
+    "async": "^0.9.0",
+    "bell": "^1.0.2",
+    "cloudinary": "~1.0.11",
+    "config": "^1.0.1",
+    "ejs": "~1.0.0",
+    "geojson-validation": "~0.1.5",
+    "hapi": "^6.2.1",
+    "hapi-auth-cookie": "^1.3.1",
+    "joi": "^4.6.1",
+    "lodash": "^2.4.1",
+    "lout": "^5.0.1",
+    "mongoose": "^3.8.14",
+    "pkgcloud": "~0.9.6"
+  },
+  "engines": {
+    "node": "0.10.x"
+  },
+  "devDependencies": {
+    "dependency-check": "~1.1.5",
+    "jscs": "~1.5.8",
+    "jshint": "^2.5.2",
+    "jshint-stylish": "^0.4.0",
+    "lab": "^3.2.1"
+  },
+  "env": {
+    "NODE_ENV": "development"
+  }
+}

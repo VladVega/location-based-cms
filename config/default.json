@@ -1,0 +1,34 @@
+{
+    "server":{
+        "host": "localhost",
+        "port": 8080
+    },
+    "api_credentials":{
+        "google": {
+            "auth_uri":"https://accounts.google.com/o/oauth2/auth",
+            "client_secret":"...",
+            "token_uri":"https://accounts.google.com/o/oauth2/token",
+            "client_email":"...",
+            "client_id":"..."
+        }
+    },
+    "databases":{
+        "domain":{
+            "uri": "mongodb://.."
+        }
+    },
+    "cloudinary":{
+        "cloud_name": "...",
+        "api_key": "...",
+        "api_secret": "..."
+    },
+    "cloudfiles": {
+        "credentials":{
+            "provider": "rackspace",
+            "username": "...",
+            "apiKey": "...",
+            "region": "IAD"
+        },
+        "container": "..."
+    }
+}
