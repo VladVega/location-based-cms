@@ -31,3 +31,4 @@ node_modules
 
 # Front end documentation
 public/jsdocs
+config/default.json
